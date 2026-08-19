@@ -1,9 +1,10 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, TouchableOpacity, FlatList, Image } from 'react-native';
+import { Text, View, FlatList, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { styles } from './styles';
 import { DATA, RESTAURANTES } from '../../components/data';
+import TabBar from '../../components/TabBar/index';
 
 const ItemCategoria = ({ title, image }) => (
   <View style={styles.itemCategoria}>
@@ -90,31 +91,8 @@ function HomeScreen() {
         contentContainerStyle={styles.listaVerticalContent}
       />
 
-      <View style={styles.tabBar}>
-        <TouchableOpacity style={styles.tabItem}>
-          <Image 
-            source={{ uri: 'https://flaticon.com' }} 
-            style={[styles.tabIcone, { tintColor: '#000' }]} 
-          />
-          <Text style={[styles.tabTexto, styles.tabTextoAtivo]}>Início</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.tabItem} onPress={() => navigation.navigate('Pedidos')}>
-          <Image 
-            source={{ uri: 'https://flaticon.com' }} 
-            style={[styles.tabIcone, { tintColor: '#666' }]} 
-          />
-          <Text style={styles.tabTexto}>Pedidos</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.tabItem}>
-          <Image 
-            source={{ uri: 'https://flaticon.com' }} 
-            style={[styles.tabIcone, { tintColor: '#666' }]} 
-          />
-          <Text style={styles.tabTexto}>Conta</Text>
-        </TouchableOpacity>
-      </View>
+      {/* barra de navegação de baixo, o componente está em src/components/TabBar */}
+      <TabBar ativo="Home" />
     </View>
   );
 }
