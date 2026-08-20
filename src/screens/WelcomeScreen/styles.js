@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { endAsyncEvent } from 'react-native/Libraries/Performance/Systrace';
 
 export const styles = StyleSheet.create({
     container:{

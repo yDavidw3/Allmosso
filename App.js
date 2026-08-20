@@ -7,7 +7,15 @@ import WelcomeScreen from './src/screens/WelcomeScreen/index';
 import LoginScreen from './src/screens/LoginScreen/index';
 import SingupScreen from './src/screens/SingupScreen/index';
 import HomeScreen from './src/screens/HomeScreen/index';
+<<<<<<< HEAD
 import DevScreen from './src/screens/DevScreen/index';
+=======
+import PedidosScreen from './src/screens/PedidosScreen/index';
+import ContaScreen from './src/screens/ContaScreen/index';
+import EnderecosScreen from './src/screens/EnderecosScreen/index';
+import PagamentosScreen from './src/screens/PagamentosScreen/index';
+import CuponsScreen from './src/screens/CuponsScreen/index';
+>>>>>>> 1a9612b302ef9bc93881e0aee26f3475d519691d
 
 const Stack = createNativeStackNavigator();
 
@@ -51,7 +59,57 @@ function MyStack() {
         }}
       />
 
+
+     
+
+
+      {/* as duas de baixo são as abas da barra inferior */}
       <Stack.Screen
+        name="Pedidos"
+        component={PedidosScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="Conta"
+        component={ContaScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      {/* telas que abrem a partir das opções da Conta */}
+
+        <Stack.Screen
+          name="Enderecos"
+          component={EnderecosScreen}
+          options={{
+            headerTitle: ' ',
+            headerShadowVisible: false,
+          }}
+        />
+
+        <Stack.Screen
+          name="Pagamentos"
+          component={PagamentosScreen}
+          options={{
+            headerTitle: ' ',
+            headerShadowVisible: false,
+          }}
+        />
+
+        <Stack.Screen
+          name="Cupons"
+          component={CuponsScreen}
+          options={{
+            headerTitle: ' ',
+            headerShadowVisible: false,
+          }}
+        />
+
+         <Stack.Screen
         name="Desenvolvedores"
         component={DevScreen}
         options={{
