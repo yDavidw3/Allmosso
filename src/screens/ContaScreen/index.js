@@ -49,6 +49,7 @@ function ContaScreen() {
         <Opcao icone="pricetag-outline" texto="Cupons" tela="Cupons" />
         <Opcao icone="notifications-outline" texto="Notificações" />
         <Opcao icone="help-circle-outline" texto="Ajuda" />
+        <Opcao icone="information-circle-outline" texto="Sobre" tela="Desenvolvedores" />
 
         {/* sair volta pra primeira tela do app */}
         <TouchableOpacity
