@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     button: {
         marginTop: 20,
         padding: 15,
-        backgroundColor: '#007AFF',
+        backgroundColor: '#F4D04E',
         borderRadius: 5,
     },
     criarConta: {
@@ -30,14 +30,14 @@ export const styles = StyleSheet.create({
         backgroundColor: '#007bff00',
         borderRadius: 5,
         borderWidth: 2,
-        borderColor: '#007AFF',
+        borderColor: '#F4D04E',
     },
     buttonText: {
-        color: '#fff',
+        color: '#22241b',
         textAlign: 'center',
     },
     criarContaText: {
-        color: '#007AFF',
+        color: '#22241B',
         textAlign: 'center',
     },
     visitante: {

@@ -50,14 +50,14 @@ export const styles = StyleSheet.create({
     color: '#999',
   },
   tagStatus: {
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#F2D04E',
     paddingHorizontal: 10,
     paddingVertical: 5,
     borderRadius: 4,
     marginLeft: 10,
   },
   textoTagStatus: {
-    color: '#444',
+    color: '#24221B',
     fontSize: 11,
     fontWeight: 'bold',
   },

@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     margin: 15,
     padding: 15,
     borderWidth: 2,
-    borderColor: '#000',
+    borderColor: '#22241B',
     borderRadius: 10,
   },
   infeior: {
@@ -34,13 +34,13 @@ export const styles = StyleSheet.create({
   },
   button: {
     marginTop: 20,
-    backgroundColor: '#007AFF',
+    backgroundColor: '#F4D04E',
     padding: 20,
     width: '100%',
     marginBottom: 15
   },
   buttonText: {
-    color: '#fff',
+    color: '#22241B',
     textAlign: 'center',
     fontSize: 15,
   },

@@ -62,7 +62,7 @@ function HomeScreen() {
 
       <View style={styles.bannerContainer}>
         <Image 
-          source={{ uri: 'https://placeholder.com' }} 
+          source={require('../../assets/banner.png')}
           style={styles.imagemBanner} 
         />
       </View>

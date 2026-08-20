@@ -2,12 +2,12 @@ export const DATA =[
   {
     id: '1',
     title: 'Restaurantes',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXkIlEwKeYhHjv3diAXmvTfM7Y8s0nLiJoJKnfbH4WiUnXfQNbzw_p-G3w&s=10',
+    image: 'https://cdn-icons-png.flaticon.com/512/3310/3310748.png',
   },
   {
     id: '2',
     title: 'Promoções',
-    image: 'https://png.pngtree.com/png-vector/20221020/ourmid/pngtree-discount-icon-png-image_6368574.png',
+    image: 'https://static.vecteezy.com/system/resources/previews/072/950/914/non_2x/3d-discount-icon-yellow-sale-tags-with-white-percentage-symbol-isolated-on-transparent-background-free-png.png',
   },
   {
     id: '3',
@@ -17,12 +17,12 @@ export const DATA =[
   {
     id: '4',
     title: 'Lasanha',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt5avpfMFR9BB268bDTEhKeghVk05-O86GbH6ASafvww&s=10',
+    image: 'https://cdn-icons-png.flaticon.com/512/6785/6785760.png',
   },
   {
     id: '5',
     title: 'Prato feito',
-    image: 'https://img.magnific.com/vetores-gratis/ilustracao-desenhada-a-mao-feijoada_23-2148793223.jpg?semt=ais_test_b&w=740&q=80',
+    image: 'https://cdn-icons-png.flaticon.com/512/857/857681.png',
   },
 ]
 
@@ -30,7 +30,7 @@ export const RESTAURANTES = [
   {
     id: '1',
     title: 'Restaurante do Palmeirense',
-    image: 'https://gstatic.com',
+    image: 'https://img.magnific.com/vetores-premium/design-de-logotipo-vintage-retro-de-restaurantes-e-catering_807399-1320.jpg?semt=ais_hybrid&w=740&q=80',
     avaliacao: '5.0',
     tempo: '10-15 min',
     distancia: '2,6 km',
@@ -39,7 +39,7 @@ export const RESTAURANTES = [
   {
     id: '2',
     title: 'La Casa de Trigo',
-    image: 'https://pngtree.com',
+    image: 'https://play-lh.googleusercontent.com/xSUG513KOdEhpD8th5ju6dvKAlzlApKdAYGZsX6OXLDjNRyEPUXfV2VeXyAVHmVfmJZAsfBXzToC1dsWluQptg',
     avaliacao: '4.6',
     tempo: '10-12 min',
     distancia: '2,0 km',
@@ -48,12 +48,39 @@ export const RESTAURANTES = [
   {
     id: '3',
     title: 'Senhor Batata - Batataria',
-    image: 'https://magnific.com',
+    image: 'https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2F2021%2F03%2F25%2F03%2FLogo-274740_303126_032824906_479307665.jpg',
     avaliacao: '4.8',
     tempo: '20-30 min',
     distancia: '4,0 km',
     tag: 'Entrega Grátis'
-  }
+  },
+    {
+    id: '4',
+    title: 'Divino Fogão',
+    image: 'https://gsobmidia.com.br/uploads/lojas/24/divino-fogao_1604579724.jpg',
+    avaliacao: '4.6',
+    tempo: '30-60 min',
+    distancia: '7,0 km',
+    tag: 'Entrega: R$10 - 20'
+  },
+  {
+    id: '5',
+    title: "MC Donalds's",
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/05/McDonald%27s_square_2020.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original',
+    avaliacao: '4.3',
+    tempo: '20-25 min',
+    distancia: '10,0 km',
+    tag: 'Entrega grátis'
+  },
+  {
+    id: '6',
+    title: "Burger King",
+    image: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Burger_King_2020.svg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original',
+    avaliacao: '5.0',
+    tempo: '15-30 min',
+    distancia: '9,0 km',
+    tag: 'Entrega grátis'
+  },
 ];
 
 

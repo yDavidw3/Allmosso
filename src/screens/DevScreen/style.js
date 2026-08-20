@@ -4,12 +4,12 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F1E7D6",
+    backgroundColor: "#FFFFFF",
   },
  
   
   header: {
-    backgroundColor: "#141414",
+    backgroundColor: "#FAFAFA",
     paddingTop: 60,
     paddingHorizontal: 20,
     paddingBottom: 30,
@@ -26,19 +26,19 @@ export const styles = StyleSheet.create({
     height: 36,
     borderRadius: 18,
     borderWidth: 1,
-    borderColor: "#F4C93F",
+    borderColor: "#F2D04E",
     justifyContent: "center",
     alignItems: "center",
     marginRight: 15,
   },
 
   setaVoltar: {
-    color: "#F4C93F",
+    color: "#F2D04E",
     fontSize: 18,
   },
 
   tituloPequeno: {
-    color: "#F4C93F",
+    color: "#2B2B2B",
     fontSize: 18,
     fontWeight: "bold",
   },
@@ -48,21 +48,21 @@ export const styles = StyleSheet.create({
   },
 
   titulo: {
-    color: "#F4C93F",
+    color: "#2B2B2B",
     fontSize: 30,
     fontWeight: "bold",
     marginBottom: 12,
   },
 
   subtitulo: {
-    color: "#EDEDED",
+    color: "#767676",
     fontSize: 14,
     lineHeight: 20,
   },
  
   
   blocoAmarelo: {
-    backgroundColor: "#F4C93F",
+    backgroundColor: "#F4EFE9",
     paddingHorizontal: 15,
     paddingTop: 15,
     paddingBottom: 20,
@@ -104,6 +104,25 @@ export const styles = StyleSheet.create({
     marginRight: 15,
   },
 
+    fotoPessoa: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    borderWidth: 1,
+    borderColor: "#BBB",
+    borderStyle: "dashed",
+    justifyContent: "center",
+    alignItems: "center",
+    marginRight: 15,
+    overflow: "hidden", // <- adiciona isso, recorta a imagem no formato do círculo
+  },
+
+  imagemPessoa: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 30,
+  },
+
   textoFotoPessoa: {
     fontSize: 11,
     color: "#777",
@@ -122,32 +141,32 @@ export const styles = StyleSheet.create({
   nomePessoa: {
     fontSize: 17,
     fontWeight: "bold",
-    color: "#141414",
+    color: "#2B2B2B",
   },
 
   funcaoPessoa: {
     fontSize: 14,
     fontWeight: "bold",
-    color: "#7A3B12",
+    color: "#F2D04E",
     marginTop: 2,
     marginBottom: 4,
   },
 
   descricaoPessoa: {
     fontSize: 13,
-    color: "#4A4A4A",
+    color: "#5C5C5C",
   },
  
   // ---------- BLOCO SOBRE O PROJETO ----------
   blocoSobre: {
-    backgroundColor:  "#F7E7B4",
+    backgroundColor:  "#F6F1E8",
     padding: 20,
   },
 
   tituloSobre: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#141414",
+    color: "#2B2B2B",
     marginBottom: 12,
   },
 
@@ -164,17 +183,17 @@ export const styles = StyleSheet.create({
     width: 100,
     fontSize: 14,
     fontWeight: "bold",
-    color: "#7A3B12",
+    color: "#9C7B63",
   },
 
   valorInfo: {
     fontSize: 14,
-    color: "#141414",
+    color: "#2B2B2B",
   },
 
   linhaVersao: {
     flexDirection: "row",
-    backgroundColor: "#141414",
+    backgroundColor: "#F2D04E",
     borderRadius: 25,
     paddingVertical: 12,
     paddingHorizontal: 20,
@@ -184,18 +203,18 @@ export const styles = StyleSheet.create({
     width: 100,
     fontSize: 14,
     fontWeight: "bold",
-    color: "#F4C93F",
+    color: "#FFFFFF",
   },
 
   valorVersao: {
     fontSize: 14,
-    color: "#F4C93F",
+    color: "#FFFFFF",
   },
 
 
   // ---------- RODAPÉ ----------
   footer: {
-    backgroundColor: "#141414",
+    backgroundColor: "#FAFAFA",
     alignItems: "center",
     paddingVertical: 30,
   },
@@ -208,17 +227,16 @@ export const styles = StyleSheet.create({
   logoFooter: {
     fontSize: 26,
     fontWeight: "bold",
-    color: "#F4C93F",
+    color: "#F2D04E",
   },
 
   fraseFooter: {
     fontSize: 13,
-    color: "#CCCCCC",
+    color: "#999999",
     marginTop: 4,
   },
 
 });
-
 
 
 /*

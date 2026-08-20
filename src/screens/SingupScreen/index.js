@@ -128,8 +128,9 @@ function SingupScreen() {
               style={styles.campo}
               placeholder='Senha'
               value={senha}
-              onChangeText={setSenha}
+              onChangeText={setSenha}        
               secureTextEntry={true}
+              autoCapitalize='none'
             />
             <TextInput
               style={styles.campo}
@@ -137,6 +138,7 @@ function SingupScreen() {
               value={confSenha}
               onChangeText={setConfSenha}
               secureTextEntry={true}
+              autoCapitalize='none'
             />
 
             <View style={styles.termos}>

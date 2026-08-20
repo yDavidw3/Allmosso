@@ -34,13 +34,13 @@ export const styles = StyleSheet.create({
   },
   button: {
     marginTop: 20,
-    backgroundColor: '#007AFF',
+    backgroundColor: '#F2D04E',
     padding: 20,
     width: '100%',
     marginBottom: 15
   },
   buttonText: {
-    color: '#fff',
+    color: '#22241B',
     textAlign: 'center',
     fontSize: 15,
   },
