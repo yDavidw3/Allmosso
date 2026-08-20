@@ -7,12 +7,16 @@ import WelcomeScreen from './src/screens/WelcomeScreen/index';
 import LoginScreen from './src/screens/LoginScreen/index';
 import SingupScreen from './src/screens/SingupScreen/index';
 import HomeScreen from './src/screens/HomeScreen/index';
+import DevScreen from './src/screens/DevScreen/index';
 
 const Stack = createNativeStackNavigator();
 
 function MyStack() {
   return(
+
+
     <Stack.Navigator>
+
       <Stack.Screen
         name="Welcome"
         component={WelcomeScreen}
@@ -46,7 +50,17 @@ function MyStack() {
           headerShown: false,
         }}
       />
+
+      <Stack.Screen
+        name="Desenvolvedores"
+        component={DevScreen}
+        options={{
+         headerShown: false, 
+        }}
+      />
+
     </Stack.Navigator>
+
   )
 }
 
