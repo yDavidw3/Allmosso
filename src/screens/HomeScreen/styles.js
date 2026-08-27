@@ -9,6 +9,12 @@ export const styles = StyleSheet.create({
   header: {
     paddingHorizontal: 20,
     marginBottom: 15,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  textoDiario: {
+    flexDirection: 'column',
   },
   saudacao: {
     fontSize: 14,
@@ -75,6 +81,54 @@ export const styles = StyleSheet.create({
     height: 120,
     backgroundColor: '#FF6B35', 
     resizeMode: 'cover',
+  },
+  secaoProdutos: {
+    marginBottom: 25,
+  },
+  tituloSecao: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#000',
+    paddingHorizontal: 20,
+    marginBottom: 15,
+  },
+  listaProdutosContent: {
+    paddingLeft: 20,
+  },
+  cardProduto: {
+    width: 130,
+    marginRight: 15,
+  },
+  fotoProduto: {
+    width: 130,
+    height: 130,
+    borderRadius: 12,
+    backgroundColor: '#F5F5F5',
+    marginBottom: 8,
+  },
+  nomeProduto: {
+    fontSize: 14,
+    color: '#333',
+    marginBottom: 4,
+  },
+  precoProduto: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: '#000',
+  },
+  botaoVerMais: {
+    width: 130,
+    height: 130,
+    borderRadius: 12,
+    backgroundColor: '#F5F5F5',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 20,
+  },
+  textoVerMais: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#FF6B35',
   },
   listaVerticalContent: {
     paddingBottom: 80, 

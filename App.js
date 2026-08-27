@@ -1,4 +1,6 @@
 import React from 'react';
+import { TextInput } from 'react-native';
+
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -14,6 +16,7 @@ import ContaScreen from './src/screens/ContaScreen/index';
 import EnderecosScreen from './src/screens/EnderecosScreen/index';
 import PagamentosScreen from './src/screens/PagamentosScreen/index';
 import CuponsScreen from './src/screens/CuponsScreen/index';
+import PesquisaScreen from './src/screens/PesquisaScreen/index';
 
 
 const Stack = createNativeStackNavigator();
@@ -50,17 +53,37 @@ function MyStack() {
           }}
         />
 
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{
-          headerShown: false,
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+
+      {/* pesquisa da homr*/}
+        <Stack.Screen
+          name="Pesquisa"
+          component={PesquisaScreen}
+          options={{
+          headerTitle: () => (
+            <TextInput
+              placeholder="Pesquisar..."
+              placeholderTextColor="#888"
+              style={{
+                backgroundColor: '#f1f3f5',
+                borderRadius: 8,
+                paddingHorizontal: 12,
+                height: 38,
+                width: '100%',
+                fontSize: 16,
+                color: '#000',
+              }}
+            />
+          ),
+          headerShadowVisible: false,
         }}
       />
-
-
-     
-
 
       {/* as duas de baixo são as abas da barra inferior */}
       <Stack.Screen
