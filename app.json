@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#FFE458" 
+      "backgroundColor": "#FFE458"
     },
     "ios": {
       "supportsTablet": true
@@ -18,10 +18,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFE458"
-      }
+      },
+      "package": "com.ydavidrw.Allmosso"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "10a1cb3c-dc60-4d4a-a5bf-a29b174e3d2d"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
