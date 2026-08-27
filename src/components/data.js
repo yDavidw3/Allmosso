@@ -66,7 +66,7 @@ export const RESTAURANTES = [
   {
     id: '5',
     title: "MC Donalds's",
-    image: 'https://upload.wikimedia.org/wikipedia/commons/0/05/McDonald%27s_square_2020.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original',
+    image: 'https://images.seeklogo.com/logo-png/37/1/mcdonalds-logo-png_seeklogo-370359.png',
     avaliacao: '4.3',
     tempo: '20-25 min',
     distancia: '10,0 km',
@@ -75,7 +75,7 @@ export const RESTAURANTES = [
   {
     id: '6',
     title: 'Burger King',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Burger_King_2020.svg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original',
+    image: 'https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg',
     avaliacao: '5.0',
     tempo: '15-30 min',
     distancia: '9,0 km',
@@ -294,84 +294,84 @@ export const PRODUTOS_FILTRADOS = [
     nome: 'Prato Feito (PF)',
     preco: 'R$ 19,99',
     chave: 'almoços',
-    image: 'https://png.pngtree.com/png-clipart/20240327/original/pngtree-rice-beans-french-fries-and-meat-png-image_14691905.png'
+    image: 'https://static.vecteezy.com/system/resources/previews/021/217/205/non_2x/picanha-potato-with-rice-png.png'
   },
   {
     id: '9',
     nome: 'Strogonoff de Carne',
     preco: 'R$ 29,99',
     chave: 'almoços',
-    image: 'https://png.pngtree.com/png-clipart/20240327/original/pngtree-chicken-stroganoff-rice-potato-straw-png-image_14692164.png'
+    image: 'https://png.pngtree.com/png-clipart/20230927/original/pngtree-chicken-stroganoff-rice-potato-straw-png-image_13145865.png'
   },
   {
     id: '10',
     nome: 'Feijoada Completa (Média)',
     preco: 'R$ 35,00',
     chave: 'almoços',
-    image: 'https://png.pngtree.com/png-clipart/20240308/original/pngtree-feijoada-the-brazilian-cuisine-tradition-png-image_14542564.png'
+    image: 'https://png.pngtree.com/png-clipart/20250606/original/pngtree-steaming-bowl-of-brazilian-feijoada-with-sausage-png-image_21132985.png'
   },
   {
     id: '11',
     nome: 'Macarronada à Bolonhesa',
     preco: 'R$ 24,90',
     chave: 'almoços',
-    image: 'https://png.pngtree.com/png-clipart/20241208/original/pngtree-delicious-pasta-bolognese-on-transparent-background-png-image_17738515.png'
+    image: 'https://png.pngtree.com/png-vector/20231018/ourmid/pngtree-pasta-with-bolognese-png-image_10207254.png'
   },
   {
     id: '12',
     nome: 'Bife à Parmegiana',
     preco: 'R$ 32,50',
     chave: 'almoços',
-    image: 'https://png.pngtree.com/png-vector/20240124/ourmid/pngtree-the-steak-parmigiana-with-potato-and-rice-png-image_11486007.png'
+    image: 'https://png.pngtree.com/png-vector/20240124/ourmid/pngtree-the-steak-parmigiana-with-potato-and-rice-png-image_11486006.png'
   },
   {
     id: '13',
-    nome: 'Marmitex Bife Acebolado',
-    preco: 'R$ 27,00',
+    nome: 'Lasanha',
+    preco: 'R$ 9,99',
     chave: 'almoços',
-    image: 'https://png.pngtree.com/png-clipart/20250525/original/pngtree-a-photograph-of-marmita-redonda-de-isopor-food-container-filled-with-png-image_21076414.png'
+    image: 'https://png.pngtree.com/png-vector/20240914/ourmid/pngtree-a-plate-of-lasagna-png-image_12857286.png'
   },
   {
     id: '14',
     nome: 'Salada Havaiana',
     preco: 'R$ 38,00',
     chave: 'almoços',
-    image: 'https://png.pngtree.com/png-clipart/20240323/original/pngtree-tasty-fresh-hawaiian-salmon-poke-salad-png-image_14663982.png'
+    image: 'https://png.pngtree.com/png-clipart/20240323/original/pngtree-tasty-fresh-hawaiian-salmon-poke-salad-png-image_14663983.png'
   },
   {
     id: '15',
     nome: 'X-Tudão',
     preco: 'R$ 18,00',
     chave: 'lanches',
-    image: 'https://png.pngtree.com/png-vector/20231016/ourmid/pngtree-burger-food-png-free-download-png-image_10199386.png'
+    image: 'https://png.pngtree.com/png-vector/20240402/ourmid/pngtree-burger-fast-food-png-image_12259413.png'
   },
   {
     id: '16',
     nome: 'Hot-Dog Completo',
     preco: 'R$ 9,99',
     chave: 'lanches',
-    image: 'https://png.pngtree.com/png-vector/20241123/ourmid/pngtree-loaded-hot-dog-with-savory-toppings-png-image_14549006.png'
+    image: 'https://png.pngtree.com/png-clipart/20241129/original/pngtree-hot-dog-with-mustard-and-ketchup-isolated-on-a-transparent-background-png-image_17419880.png'
   },
   {
     id: '17',
     nome: 'Hambúrguer Artesanal',
     preco: 'R$ 25,00',
     chave: 'lanches',
-    image: 'https://png.pngtree.com/png-clipart/20250130/original/pngtree-juicy-burger-with-bacon-strips-and-cheddar-cheese-topping-png-image_20099411.png'
+    image: 'https://png.pngtree.com/png-clipart/20241208/original/pngtree-delicious-gourmet-burger-plating-png-image_17695318.png'
   },
   {
     id: '18',
     nome: 'Misto Quente',
     preco: 'R$ 7,50',
     chave: 'lanches',
-    image: 'https://png.pngtree.com/png-clipart/20250416/original/pngtree-toasted-sandwich-with-layers-of-ham-and-cheese-between-golden-brown-png-image_20822875.png'
+    image: 'https://png.pngtree.com/png-clipart/20250116/original/pngtree-sandwich-croque-monsieur-on-white-plate-isolated-background-png-image_20010508.png'
   },
   {
     id: '19',
     nome: 'Porção de Batata Frita',
     preco: 'R$ 15,00',
     chave: 'lanches',
-    image: 'https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-french-fries-on-white-bowl-isolated-fried-fast-food-snack-isolated-png-image_10155460.png'
+    image: 'https://static.vecteezy.com/system/resources/previews/021/217/558/non_2x/delicious-french-fries-png.png'
   },
   {
     id: '20',
