@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { styles } from './styles';
+import Checkbox from 'expo-checkbox';
 
 const listaUsuarios = [
   { email: 'admin@email.com', senha: 'teste123' },
@@ -35,6 +36,8 @@ function LoginScreen() {
   const [etapa, setEtapa] = useState(1);
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const [checkbox, setCheckbox] = useState(false);
+
 
   return(
     <View style={styles.container}>
@@ -71,7 +74,18 @@ function LoginScreen() {
               value={senha}
               onChangeText={setSenha}
             />
+
+            <View style={styles.lembrarSenha}>
+              <Checkbox
+              style={styles.checkInput}
+              value={checkbox}
+              onValueChange={setCheckbox}
+              color={checkbox ? '#F4D04E' : undefined}
+              />
+              <Text style={styles.textCheck}>Lembrar minha senha</Text>
+            </View>
           </View>
+
           <View style={styles.infeior}>
             <TouchableOpacity
             style={styles.button}

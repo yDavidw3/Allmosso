@@ -49,4 +49,16 @@ export const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'space-between',
   },
+  lembrarSenha: {
+    margin: 15,
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 10,
+  },
+  checkInput: {
+    color: 'gray',
+  },
+  textCheck: {
+    color: 'gray',
+  }
 });
