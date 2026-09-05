@@ -30,7 +30,8 @@
       }
     },
     "plugins": [
-      "expo-font"
+      "expo-font",
+      "expo-splash-screen"
     ]
   }
 }
