@@ -2,10 +2,10 @@ import React from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
+import Octicons from '@expo/vector-icons/Octicons';
 import { styles } from './styles';
 
-// cada botãozinho da barra. a prop tela tem que ser igual ao name do Stack.Screen
-const ItemTab = ({ icone, texto, tela, ativo }) => {
+const ItemTab = ({ Icone, iconeAtivo, iconeInativo, texto, tela, ativo }) => {
   const navigation = useNavigation();
   const selecionado = ativo == tela;
 
@@ -14,10 +14,9 @@ const ItemTab = ({ icone, texto, tela, ativo }) => {
       style={styles.tabItem}
       onPress={() => navigation.navigate(tela)}
     >
-      {/* todo ícone do Ionicons tem 2 versões: home (cheio) e home-outline (vazado) */}
-      <Ionicons
-        name={selecionado ? icone : icone + '-outline'}
-        size={22}
+      <Icone
+        name={selecionado ? iconeAtivo : iconeInativo}
+        size={28}
         color={selecionado ? '#000' : '#666'}
       />
       <Text style={selecionado ? [styles.tabTexto, styles.tabTextoAtivo] : styles.tabTexto}>
@@ -27,13 +26,12 @@ const ItemTab = ({ icone, texto, tela, ativo }) => {
   );
 };
 
-// a prop ativo recebe o nome da tela do App.js pra saber qual aba destacar
 function TabBar({ ativo }) {
   return (
     <View style={styles.tabBar}>
-      <ItemTab icone="home" texto="Início" tela="Home" ativo={ativo} />
-      <ItemTab icone="receipt" texto="Pedidos" tela="Pedidos" ativo={ativo} />
-      <ItemTab icone="person" texto="Conta" tela="Conta" ativo={ativo} />
+      <ItemTab Icone={Octicons} iconeAtivo="home-fill" iconeInativo="home" texto="Início" tela="Home" ativo={ativo} />
+      <ItemTab Icone={Ionicons} iconeAtivo="receipt" iconeInativo="receipt-outline" texto="Pedidos" tela="Pedidos" ativo={ativo} />
+      <ItemTab Icone={Octicons} iconeAtivo="person-fill" iconeInativo="person" texto="Conta" tela="Conta" ativo={ativo} />
     </View>
   );
 }

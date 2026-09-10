@@ -1,28 +1,53 @@
 export const DATA = [
   {
     id: '1',
-    title: 'Restaurantes',
-    image: 'https://cdn-icons-png.flaticon.com/512/3310/3310748.png',
+    title: 'Top Picks',
+    image: require('../../src/assets/categorias/categoria1.png'),
   },
   {
     id: '2',
-    title: 'Promoções',
-    image: 'https://static.vecteezy.com/system/resources/previews/072/950/914/non_2x/3d-discount-icon-yellow-sale-tags-with-white-percentage-symbol-isolated-on-transparent-background-free-png.png',
+    title: 'Restaurantes',
+    image: require('../../src/assets/categorias/categoria2.png'),
   },
   {
     id: '3',
-    title: 'Bebidas',
-    image: 'https://cdn-icons-png.magnific.com/256/1980/1980881.png?semt=ais_white_label',
+    title: 'Lanches',
+    image: require('../../src/assets/categorias/categoria3.png'),
   },
   {
     id: '4',
-    title: 'Lasanha',
-    image: 'https://cdn-icons-png.flaticon.com/512/6785/6785760.png',
+    title: 'Pizzas',
+    image: require('../../src/assets/categorias/categoria4.png'),
   },
   {
     id: '5',
-    title: 'Prato feito',
-    image: 'https://cdn-icons-png.flaticon.com/512/857/857681.png',
+    title: 'Japonesas',
+    image: require('../../src/assets/categorias/categoria5.png'),
+  },
+  {
+    id: '6',
+    title: 'Doces',
+    image: require('../../src/assets/categorias/categoria6.png'),
+  },
+  {
+    id: '7',
+    title: 'Bebidas',
+    image: require('../../src/assets/categorias/categoria7.png'),
+  },
+  {
+    id: '8',
+    title: 'Salgados',
+    image: require('../../src/assets/categorias/categoria8.png'),
+  },
+  {
+    id: '9',
+    title: 'Açaí',
+    image: require('../../src/assets/categorias/categoria9.png'),
+  },
+  {
+    id: '10',
+    title: 'Sobremesas',
+    image: require('../../src/assets/categorias/categoria10.png'),
   },
 ]
 
@@ -66,7 +91,7 @@ export const RESTAURANTES = [
   {
     id: '5',
     title: "MC Donalds's",
-    image: 'https://images.seeklogo.com/logo-png/37/1/mcdonalds-logo-png_seeklogo-370359.png',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9eX_5EyWlIZLafa1a-CNPycmv5WBG_WOVcFGPbNwcqdEshDP2LfkuU0A&s=10',
     avaliacao: '4.3',
     tempo: '20-25 min',
     distancia: '10,0 km',
@@ -380,4 +405,74 @@ export const PRODUTOS_FILTRADOS = [
     chave: 'lanches',
     image: 'https://rickesdigital.com/wp-content/uploads/2023/10/Pizza-broto-calabresa.png'
   }
-]
+];
+
+export const CUPONS_INICIAIS = [
+  {
+    id: '1',
+    image: require('../../src/assets/cupons/cupom1.png'),
+  },
+  {
+    id: '2',
+    image: require('../../src/assets/cupons/cupom2.png'),
+  },
+  {
+    id: '3',
+    image: require('../../src/assets/cupons/cupom3.png'),
+  },
+  {
+    id: '4',
+    image: require('../../src/assets/cupons/cupom4.png'),
+  },
+  {
+    id: '5',
+    image: require('../../src/assets/cupons/cupom5.png'),
+  },
+  {
+    id: '6',
+    image: require('../../src/assets/cupons/cupom6.png'),
+  },
+];
+
+export const RESTAURANTES_POPULARES = [
+  {
+    id: '1',
+    image: require('../../src/assets/restaurantesFamosos/mcdonalds.jpg'),
+  },
+  {
+    id: '2',
+    image: require('../../src/assets/restaurantesFamosos/bk.png')
+  },
+  {
+    id: '3',
+    image: require('../../src/assets/restaurantesFamosos/sub.jpg')
+  },
+  {
+    id: '4',
+    image: require('../../src/assets/restaurantesFamosos/domino.jpg')
+  },
+  {
+    id: '5',
+    image: require('../../src/assets/restaurantesFamosos/kfc.png')
+  },
+  {
+    id: '6',
+    image: require('../../src/assets/restaurantesFamosos/giraffas.jpg'),
+  },
+  {
+    id: '7',
+    image: require('../../src/assets/restaurantesFamosos/express.jpg')
+  },
+  {
+    id: '8',
+    image: require('../../src/assets/restaurantesFamosos/sodie.png')
+  },
+  {
+    id: '9',
+    image: require('../../src/assets/restaurantesFamosos/madero.jpg')
+  },
+  {
+    id: '10',
+    image: require('../../src/assets/restaurantesFamosos/jeronimo.png')
+  },
+];

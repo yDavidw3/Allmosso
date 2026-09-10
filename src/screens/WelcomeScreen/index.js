@@ -35,6 +35,7 @@ function WelcomeScreen() {
         >
           <Text style={styles.criarContaText}>Continuar como visitante</Text>
         </TouchableOpacity>
+
     </View>
 
     </ImageBackground>

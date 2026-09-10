@@ -51,9 +51,8 @@ function LoginScreen() {
               value={email}
               onChangeText={setEmail}
             />
-          </View>
-          <View style={styles.infeior}>
             <Text style={styles.info}>O Allmosso poderá enviar comunicações neste e-mail, pra cancelar a inscrição acesse "Configurações".</Text>
+
             <TouchableOpacity
             style={styles.button}
             onPress={() => setEtapa(2)}
@@ -73,6 +72,7 @@ function LoginScreen() {
               placeholder='Senha'
               value={senha}
               onChangeText={setSenha}
+              secureTextEntry={true}
             />
 
             <View style={styles.lembrarSenha}>
@@ -84,9 +84,8 @@ function LoginScreen() {
               />
               <Text style={styles.textCheck}>Lembrar minha senha</Text>
             </View>
-          </View>
 
-          <View style={styles.infeior}>
+          
             <TouchableOpacity
             style={styles.button}
             onPress={testarLogin}

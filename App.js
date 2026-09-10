@@ -9,6 +9,7 @@ import WelcomeScreen from './src/screens/WelcomeScreen/index';
 import LoginScreen from './src/screens/LoginScreen/index';
 import SingupScreen from './src/screens/SingupScreen/index';
 import HomeScreen from './src/screens/HomeScreen/index';
+import OpcaoScreen from './src/screens/OpcaoScreen';
 
 import DevScreen from './src/screens/DevScreen/index';
 import PedidosScreen from './src/screens/PedidosScreen/index';
@@ -24,9 +25,8 @@ const Stack = createNativeStackNavigator();
 function MyStack() {
   return(
 
-
     <Stack.Navigator>
-
+      
       <Stack.Screen
         name="Welcome"
         component={WelcomeScreen}
@@ -60,6 +60,15 @@ function MyStack() {
             headerShown: false,
           }}
         />
+
+        <Stack.Screen
+          name="Opcao"
+          component={OpcaoScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+
 
       {/* pesquisa da homr*/}
         <Stack.Screen
@@ -138,6 +147,7 @@ function MyStack() {
          headerShown: false, 
         }}
       />
+
 
     </Stack.Navigator>
 

@@ -1,3 +1,4 @@
+import 'react-native-get-random-values';
 import React from 'react';
 import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
@@ -11,7 +12,7 @@ function SingupScreen() {
   const navigation = useNavigation();
 
   function lidarComVoltar() {
-    if(navigation.canGoBack()){
+    if (navigation.canGoBack()) {
       navigation.goBack();
     }
   }
@@ -74,8 +75,7 @@ function SingupScreen() {
 
     if (nomeValido && sobrenomeValido && numValido) {
       const senhaHash = await bcrypt.hash(senha, 10);
-      alert("cadastro realizado");
-      navigation.navigate('Home');
+      navigation.navigate('Opcao');
     } else if (!nomeValido) {
       alert("Por favor, preencha o primeiro nome corretamente!");
     } else if (!sobrenomeValido) {
@@ -95,7 +95,7 @@ function SingupScreen() {
   const [num, setNum] = useState('');
   const [cpf, setCpf] = useState('');
 
-  return(
+  return (
     <View style={styles.container}>
       {etapa == 1 && (
         <View style={styles.telaEmail}>
@@ -107,15 +107,17 @@ function SingupScreen() {
               value={email}
               onChangeText={setEmail}
             />
-          </View>
-          <View style={styles.infeior}>
-            <Text style={styles.info}>O Allmosso poderá enviar comunicações neste e-mail, pra cancelar a inscrição acesse "Configurações".</Text>
-            <TouchableOpacity
-            style={styles.button}
-            onPress={avancarParaSenha}
-            >
-              <Text style={styles.buttonText}>Continuar</Text>
-            </TouchableOpacity>
+
+
+            <View style={styles.infeior}>
+              <Text style={styles.info}>O Allmosso poderá enviar comunicações neste e-mail, pra cancelar a inscrição acesse "Configurações".</Text>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={avancarParaSenha}
+              >
+                <Text style={styles.buttonText}>Continuar</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       )}
@@ -128,7 +130,7 @@ function SingupScreen() {
               style={styles.campo}
               placeholder='Senha'
               value={senha}
-              onChangeText={setSenha}        
+              onChangeText={setSenha}
               secureTextEntry={true}
               autoCapitalize='none'
             />
@@ -142,23 +144,25 @@ function SingupScreen() {
             />
 
             <View style={styles.termos}>
-                <Checkbox 
-                  style={styles.checkTermo}
-                  value={termoUso}
-                  onValueChange={setTermoUso}
-                />
-                <Text style={styles.textTermo}>Aceito os termos de uso e concordo com a política de privacidade</Text>
+              <Checkbox
+                style={styles.checkTermo}
+                value={termoUso}
+                onValueChange={setTermoUso}
+                color={termoUso ? '#F4D04E' : undefined}
+              />
+              <Text style={styles.textTermo}>Aceito os termos de uso e concordo com a política de privacidade</Text>
             </View>
 
+            <View style={styles.infeior}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={avancarParaDados}
+              >
+                <Text style={styles.buttonText}>Continuar</Text>
+              </TouchableOpacity>
+            </View>
           </View>
-          <View style={styles.infeior}>
-            <TouchableOpacity
-            style={styles.button}
-            onPress={avancarParaDados}
-            >
-              <Text style={styles.buttonText}>Continuar</Text>
-            </TouchableOpacity>
-          </View>
+
         </View>
       )}
 
@@ -192,15 +196,17 @@ function SingupScreen() {
               onChangeText={setCpf}
               keyboardType="numeric"
             />
+
+            <View style={styles.infeior}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={validarCadastro}
+              >
+                <Text style={styles.buttonText}>Finalizar Cadastro</Text>
+              </TouchableOpacity>
+            </View>
           </View>
-          <View style={styles.infeior}>
-            <TouchableOpacity
-            style={styles.button}
-            onPress={validarCadastro}
-            >
-              <Text style={styles.buttonText}>Finalizar Cadastro</Text>
-            </TouchableOpacity>
-          </View>
+
         </View>
       )}
 
