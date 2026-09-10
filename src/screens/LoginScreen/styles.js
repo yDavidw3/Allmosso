@@ -2,6 +2,8 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
+    fontFamily: 'system',
+    paddingHorizontal: 20,
     flex: 1,
     backgroundColor: '#fff',
   },
@@ -11,42 +13,63 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   text: {
-    fontSize: 18,
-    paddingBottom: 25,
-    padding: 15,
+    fontSize: 22,
+    paddingBottom: 24,
+    fontWeight: '600',
+    letterSpacing: -0.41,
+    marginTop: 20,
   },
   campo: {
-    margin: 15,
     padding: 15,
     borderWidth: 2,
-    borderColor: '#22241B',
+    border: 'none',
+    borderColor: 'transparent',
+    backgroundColor: '#F2F2F7',
     borderRadius: 10,
+    paddingHorizontal: 16,
+    marginBottom: 16,
+    color: '#000000',
   },
   infeior: {
     width: '100%',
   },
   info: {
-    color: 'gray',
+    color: '#8e8e93',
     fontSize: 13,
-    marginLeft: 10,
-    marginRight: 5,
-    marginBottom: 15,
+    marginBottom: 32,
   },
   button: {
     marginTop: 20,
-    backgroundColor: '#F4D04E',
-    padding: 20,
+    backgroundColor: '#ffcc00',
     width: '100%',
-    marginBottom: 15
+    height: 50,
+    marginBottom: 15,
+    borderRadius: 14,
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
   },
   buttonText: {
-    color: '#22241B',
-    textAlign: 'center',
-    fontSize: 15,
+    color: '#1C1C1E',
+    margin: 'auto',
+    fontSize: 17,
+    fontWeight: '600',
   },
   telaSenha: {
     height: '100%',
     display: 'flex',
     justifyContent: 'space-between',
   },
+  lembrarSenha: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 10,
+    marginBottom: 32,
+    marginTop: 10,
+  },
+  checkInput: {
+    color: '#8e8e93',
+  },
+  textCheck: {
+    color: '#8e8e93',
+  }
 });

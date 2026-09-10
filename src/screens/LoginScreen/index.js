@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { styles } from './styles';
+import Checkbox from 'expo-checkbox';
 
 const listaUsuarios = [
   { email: 'admin@email.com', senha: 'teste123' },
@@ -35,6 +36,8 @@ function LoginScreen() {
   const [etapa, setEtapa] = useState(1);
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const [checkbox, setCheckbox] = useState(false);
+
 
   return(
     <View style={styles.container}>
@@ -48,9 +51,8 @@ function LoginScreen() {
               value={email}
               onChangeText={setEmail}
             />
-          </View>
-          <View style={styles.infeior}>
             <Text style={styles.info}>O Allmosso poderá enviar comunicações neste e-mail, pra cancelar a inscrição acesse "Configurações".</Text>
+
             <TouchableOpacity
             style={styles.button}
             onPress={() => setEtapa(2)}
@@ -70,9 +72,20 @@ function LoginScreen() {
               placeholder='Senha'
               value={senha}
               onChangeText={setSenha}
+              secureTextEntry={true}
             />
-          </View>
-          <View style={styles.infeior}>
+
+            <View style={styles.lembrarSenha}>
+              <Checkbox
+              style={styles.checkInput}
+              value={checkbox}
+              onValueChange={setCheckbox}
+              color={checkbox ? '#F4D04E' : undefined}
+              />
+              <Text style={styles.textCheck}>Lembrar minha senha</Text>
+            </View>
+
+          
             <TouchableOpacity
             style={styles.button}
             onPress={testarLogin}
