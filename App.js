@@ -18,6 +18,7 @@ import EnderecosScreen from './src/screens/EnderecosScreen/index';
 import PagamentosScreen from './src/screens/PagamentosScreen/index';
 import CuponsScreen from './src/screens/CuponsScreen/index';
 import PesquisaScreen from './src/screens/PesquisaScreen/index';
+import ProdutoScreen from './src/screens/ProdutoScreen/index';
 
 
 const Stack = createNativeStackNavigator();
@@ -91,6 +92,16 @@ function MyStack() {
             />
           ),
           headerShadowVisible: false,
+        }}
+      />
+
+      {/* modal que abre ao clicar em um produto da home */}
+      <Stack.Screen
+        name="Produto"
+        component={ProdutoScreen}
+        options={{
+          title: 'Produto',
+          presentation: 'modal',
         }}
       />
 

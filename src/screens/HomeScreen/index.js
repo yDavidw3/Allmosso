@@ -41,8 +41,8 @@ const RestaurantePopular = ({ image }) => (
   </TouchableOpacity>
 );
 
-const CardProduto = ({ nome, preco, image }) => (
-  <TouchableOpacity style={styles.cardProduto}>
+const CardProduto = ({ nome, preco, image, onPress }) => (
+  <TouchableOpacity style={styles.cardProduto} onPress={onPress}>
     <Image source={{ uri: image }} style={styles.fotoProduto} />
     <Text style={styles.precoProduto}>{preco}</Text>
     <Text style={styles.nomeProduto} numberOfLines={2}>{nome}</Text>
@@ -195,7 +195,12 @@ function HomeScreen() {
           horizontal={true}
           showsHorizontalScrollIndicator={false}
           renderItem={({ item }) => (
-            <CardProduto nome={item.nome} preco={item.preco} image={item.image} />
+            <CardProduto
+              nome={item.nome}
+              preco={item.preco}
+              image={item.image}
+              onPress={() => navigation.navigate('Produto', { produto: item })}
+            />
           )}
           keyExtractor={item => 'prod-' + item.id}
           contentContainerStyle={styles.listaProdutosContent}
