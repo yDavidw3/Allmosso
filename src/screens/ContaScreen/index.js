@@ -54,7 +54,7 @@ function ContaScreen() {
         {/* sair volta pra primeira tela do app */}
         <TouchableOpacity
           style={styles.botaoSair}
-          onPress={() => navigation.navigate('Welcome')}
+          onPress={() => navigation.reset({ index: 0, routes: [{ name: 'Welcome' }] })}
         >
           <Text style={styles.textoSair}>Sair da conta</Text>
         </TouchableOpacity>

@@ -104,7 +104,7 @@ function OpcaoScreen() {
             <TouchableOpacity 
             style={styles.botaoSalvarSelected}
             onPress={() => {
-                navigation.navigate('Home');
+                navigation.reset({ index: 0, routes: [{ name: 'Home' }] });
                 alert("cadastro realizado");
             }}
             >
@@ -204,7 +204,7 @@ function OpcaoScreen() {
                         <TouchableOpacity 
                         style={styles.botoes}
                         onPress={() => {
-                            navigation.navigate('Home');
+                            navigation.reset({ index: 0, routes: [{ name: 'Home' }] });
                             alert("cadastro realizado");
                         }}
                         >
