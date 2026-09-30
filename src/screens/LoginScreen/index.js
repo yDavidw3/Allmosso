@@ -21,7 +21,7 @@ function LoginScreen() {
 
     if(usuarioExiste){
       alert('Logado com sucesso!');
-      navigation.navigate('Home');
+      navigation.reset({ index: 0, routes: [{ name: 'Home' }] });
     }else{
       alert('*E-mail ou senha incorretos*');
     }

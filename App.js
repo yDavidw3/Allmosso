@@ -26,8 +26,12 @@ const Stack = createNativeStackNavigator();
 function MyStack() {
   return(
 
-    <Stack.Navigator>
-      
+    <Stack.Navigator
+      screenOptions={{
+        animation: 'slide_from_right',
+      }}
+    >
+
       <Stack.Screen
         name="Welcome"
         component={WelcomeScreen}
@@ -59,6 +63,7 @@ function MyStack() {
           component={HomeScreen}
           options={{
             headerShown: false,
+            animation: 'fade',
           }}
         />
 
@@ -111,6 +116,7 @@ function MyStack() {
         component={PedidosScreen}
         options={{
           headerShown: false,
+          animation: 'fade',
         }}
       />
 
@@ -119,6 +125,7 @@ function MyStack() {
         component={ContaScreen}
         options={{
           headerShown: false,
+          animation: 'fade',
         }}
       />
 

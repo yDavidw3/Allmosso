@@ -12,7 +12,12 @@ const ItemTab = ({ Icone, iconeAtivo, iconeInativo, texto, tela, ativo }) => {
   return (
     <TouchableOpacity
       style={styles.tabItem}
-      onPress={() => navigation.navigate(tela)}
+      // replace troca a aba sem empilhar tela nova (senão o voltar passa por todas as abas)
+      onPress={() => {
+        if (!selecionado) {
+          navigation.replace(tela);
+        }
+      }}
     >
       <Icone
         name={selecionado ? iconeAtivo : iconeInativo}
