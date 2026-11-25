@@ -72,4 +72,27 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 3,
   },
+  botaoExcluir: {
+    padding: 8,
+  },
+  vazio: {
+    textAlign: 'center',
+    color: '#999',
+    marginTop: 40,
+  },
+  botaoNovo: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ffcc00',
+    borderRadius: 14,
+    height: 50,
+    margin: 20,
+  },
+  textoBotaoNovo: {
+    color: '#1C1C1E',
+    fontSize: 17,
+    fontWeight: '600',
+    marginLeft: 6,
+  },
 });

@@ -15,7 +15,9 @@ import DevScreen from './src/screens/DevScreen/index';
 import PedidosScreen from './src/screens/PedidosScreen/index';
 import ContaScreen from './src/screens/ContaScreen/index';
 import EnderecosScreen from './src/screens/EnderecosScreen/index';
+import EnderecoFormScreen from './src/screens/EnderecoFormScreen/index';
 import PagamentosScreen from './src/screens/PagamentosScreen/index';
+import PagamentoFormScreen from './src/screens/PagamentoFormScreen/index';
 import CuponsScreen from './src/screens/CuponsScreen/index';
 import PesquisaScreen from './src/screens/PesquisaScreen/index';
 import ProdutoScreen from './src/screens/ProdutoScreen/index';
@@ -140,9 +142,29 @@ function MyStack() {
           }}
         />
 
+        {/* formulário de cadastro/edição de endereço (CRUD com SQLite) */}
+        <Stack.Screen
+          name="EnderecoForm"
+          component={EnderecoFormScreen}
+          options={{
+            headerTitle: ' ',
+            headerShadowVisible: false,
+          }}
+        />
+
         <Stack.Screen
           name="Pagamentos"
           component={PagamentosScreen}
+          options={{
+            headerTitle: ' ',
+            headerShadowVisible: false,
+          }}
+        />
+
+        {/* formulário de cadastro/edição de forma de pagamento (CRUD com SQLite) */}
+        <Stack.Screen
+          name="PagamentoForm"
+          component={PagamentoFormScreen}
           options={{
             headerTitle: ' ',
             headerShadowVisible: false,
